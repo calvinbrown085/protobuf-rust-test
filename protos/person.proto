@@ -1,0 +1,29 @@
+message Person {
+  required string name = 1;
+  optional Age age = 2;
+  optional Email email = 3;
+  oneof test_oneof {
+       string phone = 4;
+       int32 number = 5;
+    }
+  optional Address address = 6;
+
+}
+
+message Name {
+  required string value = 1;
+}
+
+message Age {
+  required int32 value = 1;
+}
+
+message Email {
+  required string value = 1;
+}
+
+message Address {
+  required string street = 1;
+  required string city = 2;
+  required string state = 3;
+}
